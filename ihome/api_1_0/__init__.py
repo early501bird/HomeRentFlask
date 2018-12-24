@@ -3,8 +3,9 @@
 
 from flask import Blueprint
 
-#导入蓝图
-# from . import demo
 
 # 创建蓝图对象
 api = Blueprint('api_1_0', __name__)
+
+#导入蓝图,注意这个顺序不能错
+from . import demo
